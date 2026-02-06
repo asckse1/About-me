@@ -41,3 +41,7 @@ body {
 .page-body p {
   border: 1px solid grey;
 }
+
+.body-text {
+color: rgb(255 255 255)
+}
