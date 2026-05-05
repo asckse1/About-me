@@ -1,9 +1,13 @@
 {
   "en":{
     "DTitle": "Want to add me on discord?",
-    "DLink": "Sure!"
+    "DLink": "Sure!",
+    "MTitle":"Email:",
+    "MLink": "Send an inquiry"
   },
   "jp":{
     "DTitle":"Discordで繋がりませんか？",
-    "DLink":"繋がろ！"
+    "DLink":"繋がろ！",
+    "MTitle":"メールでのお問い合わせ:",
+    "MLink":"メールを送る"
   }
