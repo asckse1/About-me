@@ -32,7 +32,7 @@
   </header>
   <div class="page-body">
     <div class="container">
-      <h1> About Me</h1>
+      <h1 data-i18n="title"> About Me</h1>
       <p class="body-text" data-i18n="about-me-description">
       My name is Ash, I am a 22 year old student and indie game developer working on
       projects like "Alchemical Adventures", and "The Monument Of Souls" - the former being a TTRPG, and
@@ -64,7 +64,7 @@
       document.querySelectorAll('[data-i18n]').forEach(element => {
     const key = element.getAttribute('data-i18n');
         if (tls[currentlang] && tls[currentlang][key]) {
-      element.textContent = tls[currentlang][key];
+      element.innerHTML = tls[currentlang][key];
         };
         
 
