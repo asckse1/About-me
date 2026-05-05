@@ -105,8 +105,9 @@ color: rgb(255 255 255)
     text-align: center;
     }
 .page-header {
-border-bottom: 10px solid rgb(100 100 100);
+  border-bottom: 1px solid #ffffff33; /* 33 is roughly 20% opacity white */
 }
+
 .page-footer {
-border-top: 10px solid rgb(100 100 100);
+  border-top: 1px solid #ffffff33;
 }
