@@ -56,7 +56,7 @@
     let tls = {};
     fetch("HomepageTL.json")
     .then( response => response.json())
-    .then( data >= {
+    .then( data => {
       tls = data;
       changeLanguage()
      });
