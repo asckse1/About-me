@@ -105,9 +105,9 @@ color: rgb(255 255 255)
     text-align: center;
     }
 .page-header {
-  border-bottom: 1px solid #ffffff33; /* 33 is roughly 20% opacity white */
+  border-bottom: 2px solid #ffffff; /* Solid white for testing */
 }
 
 .page-footer {
-  border-top: 1px solid #ffffff33;
+  border-top: 2px solid #ffffff;
 }
