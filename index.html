@@ -52,30 +52,30 @@
   
   </div>
   <script>
-    let currentlang = "en"
+    let currentlang = "en";
     let tls = {};
     fetch("HomepageTL.json")
     .then( response => response.json())
     .then( data => {
       tls = data;
-      changeLanguage()
+      changeLanguage();
      });
     function changeLanguage(){
       document.querySelectorAll('[data-i18n]').forEach(element => {
     const key = element.getAttribute('data-i18n');
         if (tls[currentlang] && tls[currentlang][key]) {
       element.textContent = tls[currentlang][key];
-        }
+        };
         
 
 
-    }
+    });
     if(currentlang=="en"){
-          currentlang="jp"
+          currentlang="jp";
 
         }
         else{
-          currentlang="en"
+          currentlang="en";
 
         }
     }
