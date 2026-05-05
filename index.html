@@ -53,7 +53,7 @@
   </div>
   <script>
     let currentlang = "en"
-    let translations = {};
+    let tls = {};
     fetch("HomepageTL.json")
     .then( response => response.json())
     .then( data >= {
@@ -66,17 +66,18 @@
         if (translations[currentlang] && translations[currentlang][key]) {
       element.textContent = translations[currentlang][key];
         }
-        if(currentLang=="en"){
-          currentLang="jp"
-
-        }
-        else{
-          currentLang="en"
-
-        }
+        
 
 
     }
-    
+    if(currentlang=="en"){
+          currentlang="jp"
+
+        }
+        else{
+          currentlang="en"
+
+        }
+    }
   </script>
 </body>
