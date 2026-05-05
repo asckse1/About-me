@@ -51,4 +51,23 @@
   </footer>
   
   </div>
+  <script>
+    let translations = {};
+    fetch("HomepageTL.json")
+    .then( response => response.json())
+    .then( data >= {
+      tls = data;
+      changeLanguage("en")
+     });
+    function changeLanguage(lg){
+      document.querySelectorAll('[data-i18n]').forEach(element => {
+    const key = element.getAttribute('data-i18n');
+        if (translations[lg] && translations[lg][key]) {
+      element.textContent = translations[lg][key];
+        }
+
+
+    }
+    
+  </script>
 </body>
