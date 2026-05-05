@@ -7,13 +7,27 @@
   <div class="wrapper">
     
        
-       <header class="page-header">
-              <button type="image" class="btn" id="menu-toggle">
-                  <img src="assets/ui/buttonIcon.png" alt="Click me!">
-              </button>
+      <header class="page-header">
+        <button type="image" class="btn" id="menu-toggle">
+      <img src="assets/ui/buttonIcon.png" alt="Click me!">
+    </button>
+    <img src= "assets/textimgs/name.svg"  width=312 height=50>
+    <nav id="side-menu" class="side-nav">
+    <a href="#">Home</a>
+    <a href="./projects/index.html">Projects</a>
+    <a href="#">Contact</a>
+    </nav>
+    <script>
+      const menuToggle = document.getElementById('menu-toggle');
+      const sideMenu = document.getElementById('side-menu');
+      menuToggle.addEventListener('click', () => {
+        sideMenu.classList.toggle('active');
+});
+
+    </script>
        </header>
        <body class="page-body">
-        
+        <div class="container">
               
                
                <h1> Alchemical Adventures</h1>
@@ -35,4 +49,6 @@
     - Class Advancement Quests - completely overhaul traditional class advancement systems by analyzing player input data and designing a build from a list of potential skills based on their playstyle.
   
  </p2>
+        </div>       
 </body>
+  </div>
