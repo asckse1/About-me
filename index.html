@@ -10,6 +10,22 @@
     background-position: center;
     background-attachment: fixed;
     }
+    .container:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+    filter: blur(10px);
+    background: inherit;
+}
+    .container{
+    background: inherit;
+    }
+
+    
     
   </style>
   <div class="wrapper">
@@ -21,13 +37,15 @@
   <img src= "assets/textimgs/name.svg"  width=312 height=50>
   </header>
   <main class="page-body">
-    <p class="body-text">
+    <div class="container">
+      <p class="body-text">
       My name is Ash, I am a 22 year old student and indie game developer working on
       projects like "Alchemical Adventures", and "The Monument Of Souls" - the former being a TTRPG, and
       the latter being an MMO.
 
       for more information visit my Projects page.
     </p>
+    </div>
   </main>
   <footer class="page-footer">
     <span>
