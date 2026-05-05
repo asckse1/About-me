@@ -1,9 +1,12 @@
 <!doctype html>
-<head>
-<link rel="stylesheet" href="style.css">
+<head style="display: none;">
   why do i do this to myself, it was meant to be a simple plaintext page in w3, but to be fair ive been meaning to make an about me page anyhow.
   if you're reading this, you probably shouldnt be its in an invisible header, and if you think you should, dont do anything in the console unless you know exactly what you are doing.
+
 </head>
+<head>
+<link rel="stylesheet" href="style.css">
+  </head>
 <body>
   <style>
     .page-body{
@@ -37,6 +40,14 @@
     <a href="./projects/index.html">Projects</a>
     <a href="#">Contact</a>
     </nav>
+    <script>
+      const menuToggle = document.getElementById('menu-toggle');
+      const sideMenu = document.getElementById('side-menu');
+      menuToggle.addEventListener('click', () => {
+        sideMenu.classList.toggle('active');
+});
+
+    </script>
   </header>
   <main class="page-body">
     <div class="container">
